@@ -104,7 +104,10 @@ function showCalendar(month, year) {
 			  
 			  // Museo
 			  if ( date === fechaMuseo.getDate() && year === fechaMuseo.getFullYear() && month === fechaMuseo.getMonth() ) {
-                  cell.innerHTML = "<span><a style='color: #000000' href='http://felizcumple.xyz/images/pic02.jpg'>"  + date + "</a></span>";
+                  cell.innerHTML = "<span><a style='color: #000000' href='http://felizcumple.xyz/images/pic02.png'>"  + date + "</a></span>";
+				  console.log( fechaMuseo.getDate());
+				 console.log( fechaMuseo.getFullYear());
+				 console.log( fechaMuseo.getMonth());
               }
 
               if ( date === today.getDate() && year === today.getFullYear() && month === today.getMonth() ) {
