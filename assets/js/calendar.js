@@ -8,6 +8,7 @@ function generate_year_range(start, end) {
 
 var today = new Date();
 var nuestraFecha = new Date("Sat Oct 19 2019 19:48:29 GMT-0300 (Argentina Standard Time)");
+var fechaMuseo = new Date("Sun Feb 23 2020 19:48:29 GMT-0300 (Argentina Standard Time)");
 var currentMonth = today.getMonth();
 var currentYear = today.getFullYear();
 var selectYear = document.getElementById("year");
@@ -96,8 +97,14 @@ function showCalendar(month, year) {
               cell.className = "date-picker";
               cell.innerHTML = "<span style='cursor: pointer'>" + date + "</span>";
 
+			  // First hangout
               if ( date === nuestraFecha.getDate() && year === nuestraFecha.getFullYear() && month === nuestraFecha.getMonth() ) {
-                  cell.innerHTML = "<span><a style='color: #000000' href='index.html'>"  + date + "</a></span>";
+                  cell.innerHTML = "<span><a style='color: #000000' href='http://felizcumple.xyz/pdf/LdeLetter.pdf'>"  + date + "</a></span>";
+              }
+			  
+			  // Museo
+			  if ( date === fechaMuseo.getDate() && year === fechaMuseo.getFullYear() && month === fechaMuseo.getMonth() ) {
+                  cell.innerHTML = "<span><a style='color: #000000' href='http://felizcumple.xyz/images/pic02.jpg'>"  + date + "</a></span>";
               }
 
               if ( date === today.getDate() && year === today.getFullYear() && month === today.getMonth() ) {
