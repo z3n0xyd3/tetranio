@@ -19,6 +19,8 @@
 		vertical-align: baseline;
 	}
 
+
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -2384,6 +2386,14 @@
 
 /* Image */
 
+	.img {
+		margin: 0 auto;
+		max-width:500px;
+		max-height:720px;
+		width: 50%;
+		text-align: center;
+	}
+	
 	.image {
 		border: 0;
 		display: inline-block;
